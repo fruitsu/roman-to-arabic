@@ -1,0 +1,43 @@
+ {% load staticfiles %}
+
+<html>
+    <head>
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <title>Caesar</title>
+        <link rel="stylesheet" href="{% static 'css/convert.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{% static "/js/main.js" %}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id='desc'>Римляне, как известно, использовали для записи числа латинские буквы. Считается, что римская система
+                    счисления является классическим примером непозиционной системы счисления, то есть такой системы
+                    счисления, в которой величина (которую обозначает цифра) не зависит от положения в числе.
+                    Напомним, что в римской системе счисления I обозначает 1, V обозначает 5, X — 10, L — 50, C — 100, D —
+                    500, M — 1000. Например, число 3 в римской системе счисления будет обозначаться как III.
+                    Однако, на самом деле, не все так просто, и она не является полностью непозиционной системой счисления,
+                    потому что в римской системе счисления есть дополнительное правило, которое влияет на величину, которую
+                    обозначает цифра, в зависимости от ее положения. Правило это запрещает употребление одной и той же
+                    цифры более 3 раз подряд, поэтому три - это III, а четыре - это уже IV, и I(1), стоящая перед большей цифрой
+                    V(5), обозначает вычитание, то есть фактически равна -1.
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id='wraper'>
+                    <form method="POST" id="covert-form" class="post-form">
+                        <div class="form-group">
+                            {% csrf_token %}
+                            <textarea id="convert" rows="10" cols="45" class="te" placeholder="Введите текст..." autofocus></textarea>
+                            <input type="submit" id="submit" class="btn submit-button" value="Convert">
+                            <textarea id="convert-result" rows="10" cols="45" readonly class="te"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

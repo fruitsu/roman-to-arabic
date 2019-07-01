@@ -1,0 +1,126 @@
+body
+{
+    background-color:#EBEBE4;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+#diagram, #wraper
+{
+    padding:5px;
+    border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+   -khtml-border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color:#D4D0C8;
+}
+
+
+#wraper
+{
+width:1100px;
+overflow:hidden;
+margin:0px auto 30px auto;
+}
+
+
+
+#wrap2
+{
+    width:200px;
+    float:left;
+}
+#inText
+{
+    margin:5px 0px 0px 10px;
+    width:100px;
+    background-color:#EBEBE4;
+}
+.te
+{
+height:250px;
+float:left;
+width:450px;
+background-color:#EBEBE4;
+}
+
+.btn
+{
+    position:relative;
+   width:160px;
+   height:40px;
+   margin:8px 20px 0px 20px;
+  font-family: arial,sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 50px;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+
+}
+.Hover:hover {
+   cursor:pointer;
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+#diagram
+{
+    width:1075px;
+    height:120px;
+    margin:5px auto;
+    padding:20px  20px 70px 20px;
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+#diagram> hr
+{
+    position:absolute;
+    width:97.5%;
+    margin-left:-0.5%;
+    bottom:50px;
+
+} #desc
+ {
+     font-style:italic;
+     font-size:20px;
+     width:1100px;
+     margin: 20px auto;
+     overflow:hidden;
+ }
+ #desc> hr
+ {
+     box-shadow: 0 0px 2px rgba(0,0,0,0.4);
+ }
+
+
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.submit-button {
+  padding: 10px 10px;
+  display: block;
+  height: 50px;
+  position: relative;
+  border: 1px solid #171616;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 4px 0px #b5adad;
+  cursor: pointer;
+}
